@@ -8,3 +8,5 @@ RUN curl https://www.apache.org/dist/cassandra/KEYS | apt-key add -
 RUN apt-get update
 
 RUN apt-get install -y cassandra
+
+CMD service cassandra start
